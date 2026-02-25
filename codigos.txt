@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*selector de TIPO (etiqueta): afectar a todo el cuerpo de la pagina*/
+body{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background: #f5f5f5;
+}
+/*selector de TIPO aplicar estilo al encabezado*/
+header{
+    background: #333;
+    color: #FFFF00;
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+	display: flex;
+}
+ 
+/*selector descendiente*/
+nav ul{
+    list-style: none;
+}
+/*selector de tipo para los elementos li dentro del nav ul*/
+nav ul li{
+    display: inline-block;
+    margin: 0 20px;
+}
+ 
+ /* selector de enlaces (a) dentro del nav */
+ nav ul a{
+	 color: #FF6600 ;
+	 text-decoration: none;
+	 font-weight: bold;
+ }
+ 
+ /* selector de CLASE selecion c ualquier elemento que tenga class ="proyecto-card"*/
+ 
+ .proyecto-card{
+	 border: 1px solid #ddd;
+	 padding: 20px;
+	 margin: 20px;
+	 border-radius: 8px;
+	 background: #fff;
+	 box-shadow: 0 2px 5px rgba (0,0,0,0.1);
+	 
+ }
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Ronny Añez</title>	
+	<link rel="stylesheet" href="style.css">
+	 <!--<link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+   <header>
+    <nav>
+        <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+   </header>
+   <section>
+   <h1> Bienvenido al portafolio de Ronny </h1>
+   <!-- <p> define un párrafo de texto [6] -->
+   <p> Hola Soy Ronny Añez, un ing de sistemas  apasionado por aprender este diplomado. </p>  
+  </section>
+  
+
+   <section id="proyectos">
+    <h2> Mis proyectos</h2>
+    <div id="contenedor-proyectos">
+        <div class="proyecto-card">
+            <h3> Proyecto 1</h3>
+            <p>Descripción breve del proyecto 1.</p>
+        </div>
+    </div>
+	
+	
+	
+	<div id="contenedor-proyectos">
+        <div class="proyecto-card">
+            <h3> Proyecto 2</h3>
+            <p>Descripción breve del proyecto 2.</p>
+        </div>
+    </div>
+	
+	<div id="contenedor-proyectos">
+        <div class="proyecto-card">
+            <h3> Proyecto 3</h3>
+            <p>Descripción breve del proyecto 3.</p>
+        </div>
+    </div>
+	
+	<div id="contenedor-proyectos">
+        <div class="proyecto-card">
+            <h3> Proyecto 4</h3>
+            <p>Descripción breve del proyecto 4.</p>
+        </div>
+    </div>
+	
+	
+	
+   </section>
+   <footer>
+    <p>&copy; 2026 RHAA. Todos los derechos reservados.</p>
+   </footer>
+  
+</body>
+</html>
