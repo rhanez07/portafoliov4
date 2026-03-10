@@ -5,9 +5,14 @@
 }
 /*selector de TIPO (etiqueta): afectar a todo el cuerpo de la pagina*/
 body{
-    font-family: 'Poppins', sans-serif;
+    
+	
+	font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    background: #f5f5f5;
+    background: #F0F8FF;
+	display: grid;
+	place-content: center;
+;
 }
 /*selector de TIPO aplicar estilo al encabezado*/
 header{
@@ -31,15 +36,131 @@ nav ul li{
 /*selector de los enlaces (a) dentro del nav */
  
 nav ul li a{
-    color: #ff6600;
+    color: #6fffff;
     text-decoration: none;
     font-weight: bold;
 }
  
 /*selector de CLASE selecciona cualquier elemento que tenga class="proyecto-card"*/
 .proyecto-card{
-    border: 1px solid #ddd;
-    padding: 20px;
+	border: 1px solid #ddd;
+    padding: 30px;
     margin: 20px;
     border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+    width: 900px;
 }
+
+/*selector de ID (#) selecionar un eleemento especifico */
+
+#contenedor-proyectos{
+	  border: 2px solid black;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+	padding: 20px;
+	background: #00aae4;
+	
+}
+	/* ponerle color al boton cuando se le pasa el mouse*/
+button{
+	position: relative;
+	border: none;
+	height: 50px;
+	width: 200px;
+	font-size: 22px;
+	transition: .4s linear;
+	cursor: pointer;
+}
+
+button:hover{
+	background-color: #ff6666;
+	box-shadow: 0 0 5px #ff6666, 0 0 25px #ff6666,0 0 50px #ff6666,, 0 0 100px #ff6666, 0 0 300px #ff6666;
+	
+}
+/* poner  una imagen */
+.img-1 {
+	
+	width: 250px;
+	height: 50px;
+	float: left;
+}
+	
+	
+/*CAMBIAR COLOR A LAS LETRAS*/
+	h1 {
+  color: black; /* Color original */
+  text-decoration: none;
+}
+
+h1:hover {
+  color: #07d544; /* Color al pasar el mouse */
+  cursor: pointer;
+}
+
+h3 {
+  color: black; /* Color original */
+  text-decoration: none;
+}
+
+h3:hover {
+  color: #ff6600; /* Color al pasar el mouse */
+  cursor: pointer;
+  
+}
+
+	/*MEDIA  QUERYS*/
+	@media screen and (max-width: 600px){
+		nav ul il {
+			display: block;
+			margin: 10px 0;
+		}
+		
+		.proyecto-card{
+			width: 100%;
+		}
+	}
+
+
+
+
+	
+	@media screen and (min-width:601px) and (max-width: 900px){
+	
+	#contenedor-proyectos {
+		justify-content: space-around;
+		gap: 10px;
+	}
+	
+	.proyecto-card {
+		width: 45%;
+	}
+	h1{
+		font-size: 1.5em;
+	}
+	}
+	
+	
+	@media (prefers-color-scheme: dark){
+		body{
+			background: #121212;
+			color: #e0e0e0e0;
+		}
+		
+		header {
+			background: #1f1f1f;
+		}
+		
+		.proyecto-card{
+			background: #1e1e1e;
+			border:1px solid #333;
+			color: #e0e0e0;
+		}
+		
+		.proyecto-card a{
+			color: #90caf9;
+		}
+		
+	}
